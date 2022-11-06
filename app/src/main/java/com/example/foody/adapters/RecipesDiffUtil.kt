@@ -1,7 +1,7 @@
 package com.example.foody.adapters
 
 import androidx.recyclerview.widget.DiffUtil
-import com.example.foody.data.remote.models.Result
+import com.example.foody.models.Result
 
 class RecipesDiffUtil(
     private val oldList: List<Result>,

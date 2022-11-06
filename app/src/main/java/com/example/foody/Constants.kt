@@ -10,3 +10,7 @@ const val QUERY_TYPE = "type"
 const val QUERY_DIET = "diet"
 const val QUERY_ADD_RECIPE_INFORMATION = "addRecipeInformation"
 const val QUERY_FILL_INGREDIENTS = "fillIngredients"
+
+//Room Database
+const val DATABASE_NAME = "recipes_database"
+const val RECIPES_TABLE = "recipes_table"

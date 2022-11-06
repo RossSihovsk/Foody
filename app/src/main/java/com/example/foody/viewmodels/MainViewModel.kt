@@ -10,7 +10,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.example.foody.data.Repository
 import com.example.foody.data.remote.NetworkResult
-import com.example.foody.data.remote.models.FoodRecipe
+import com.example.foody.models.FoodRecipe
 import kotlinx.coroutines.launch
 import retrofit2.Response
 
