@@ -1,4 +1,4 @@
-package com.example.foody.data.remote.models
+package com.example.foody.models
 
 import com.google.gson.annotations.SerializedName
 

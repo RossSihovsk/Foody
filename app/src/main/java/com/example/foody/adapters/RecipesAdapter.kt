@@ -4,8 +4,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.example.foody.data.remote.models.FoodRecipe
-import com.example.foody.data.remote.models.Result
+import com.example.foody.models.FoodRecipe
+import com.example.foody.models.Result
 import com.example.foody.databinding.RecipesRowLayoutBinding
 
 class RecipesAdapter : RecyclerView.Adapter<RecipesAdapter.MyViewHolder>() {
