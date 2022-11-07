@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Ross/Projects/Foody/app/src/main/res/drawable/ic_error_placeholder.xml" value="0.1" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/activity_main.xml" value="0.23489583333333333" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/fragment_favorite_recepies.xml" value="0.23489583333333333" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/fragment_food_joke.xml" value="0.23489583333333333" />
