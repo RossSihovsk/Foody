@@ -8,7 +8,7 @@
         android:id="@+id/recipesFragment"
         android:name="com.example.foody.screen.RecipesFragment"
         android:label="Recipes"
-        tools:layout="@layout/fragment_recipes" >
+        tools:layout="@layout/fragment_recipes">
         <action
             android:id="@+id/action_recipesFragment_to_recipesBottomSheet"
             app:destination="@id/recipesBottomSheet" />
@@ -16,6 +16,9 @@
             android:name="backFromBottomSheet"
             app:argType="boolean"
             android:defaultValue="false" />
+        <action
+            android:id="@+id/action_recipesFragment_to_detailsActivity"
+            app:destination="@id/detailsActivity" />
     </fragment>
     <fragment
         android:id="@+id/favoriteRecipesFragment"
@@ -30,9 +33,18 @@
     <dialog
         android:id="@+id/recipesBottomSheet"
         android:name="com.example.foody.screen.RecipesBottomSheet"
-        android:label="RecipesBottomSheet" >
+        android:label="RecipesBottomSheet">
         <action
             android:id="@+id/action_recipesBottomSheet_to_recipesFragment"
             app:destination="@id/recipesFragment" />
     </dialog>
+    <activity
+        android:id="@+id/detailsActivity"
+        android:name="com.example.foody.screen.DetailsActivity"
+        android:label="Details"
+        tools:layout="@layout/activity_details">
+        <argument
+            android:name="result"
+            app:argType="com.example.foody.models.Result" />
+    </activity>
 </navigation>

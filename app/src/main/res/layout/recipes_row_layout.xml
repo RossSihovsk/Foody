@@ -12,6 +12,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/recipesRowLayout"
         android:layout_width="match_parent"
+        onRecipesClickListener="@{result}"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="4dp">
@@ -67,11 +68,11 @@
                 <TextView
                     android:id="@+id/description_textView"
                     android:layout_width="0dp"
+                    parseHtml="@{result.summary}"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
                     android:ellipsize="end"
                     android:maxLines="3"
-                    android:text="@{result.summary}"
                     android:textColor="@color/darkGray"
                     app:layout_constraintEnd_toEndOf="@+id/title_textView"
                     app:layout_constraintStart_toStartOf="@+id/title_textView"

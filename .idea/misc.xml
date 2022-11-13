@@ -3,16 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Ross/Projects/Foody/app/src/main/res/drawable/gradient_overlay.xml" value="0.187" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/drawable/ic_error_placeholder.xml" value="0.1" />
+        <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/activity_details.xml" value="0.1796875" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/activity_main.xml" value="0.23489583333333333" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/fragment_favorite_recepies.xml" value="0.23489583333333333" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/fragment_food_joke.xml" value="0.23489583333333333" />
+        <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/fragment_overview.xml" value="0.24955436720142601" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/fragment_recipes.xml" value="0.22" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/fragment_recipesbottom_sheet.xml" value="0.1" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/placeholder_row_layout.xml" value="0.325" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/plcaeholder_row_layout.xml" value="0.5" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/recipes_bottom_sheet.xml" value="0.17845117845117844" />
-        <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/recipes_row_layout.xml" value="0.4714064914992272" />
+        <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/recipes_row_layout.xml" value="0.275049115913556" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/menu-v26/recipes_menu.xml" value="0.23020833333333332" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/menu/bottom_nav_menu.xml" value="0.23489583333333333" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/menu/recipes_menu.xml" value="0.23020833333333332" />
