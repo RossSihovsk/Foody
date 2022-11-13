@@ -4,6 +4,7 @@ const val BASE_URL = "https://api.spoonacular.com"
 const val  API_KEY = "354051a4cb8544ea9f0b777b7619655e"
 
 // API Query Keys
+const val QUERY_SEARCH = "search"
 const val QUERY_NUMBER = "number"
 const val QUERY_API_KEY = "apiKey"
 const val QUERY_TYPE = "main course"
