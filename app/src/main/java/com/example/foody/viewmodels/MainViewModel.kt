@@ -4,11 +4,11 @@ import android.app.Application
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
-import android.util.Log
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.*
 import com.example.foody.data.Repository
-import com.example.foody.data.database.RecipesEntity
+import com.example.foody.data.database.entities.FavoritesEntity
+import com.example.foody.data.database.entities.RecipesEntity
 import com.example.foody.data.remote.NetworkResult
 import com.example.foody.models.FoodRecipe
 import kotlinx.coroutines.Dispatchers
@@ -22,16 +22,34 @@ class MainViewModel @ViewModelInject constructor(
 
     /** DATABASE*/
 
-    val readRecipes: LiveData<List<RecipesEntity>> = repository.localDataSource.readDatabase().asLiveData()
+    val readRecipes: LiveData<List<RecipesEntity>> =
+        repository.localDataSource.readRecipes().asLiveData()
+    val readFavoriteRecipes: LiveData<List<FavoritesEntity>> =
+        repository.localDataSource.readFavoriteRecipes().asLiveData()
 
-    private fun insertRecipes(recipesEntity: RecipesEntity) = viewModelScope.launch(Dispatchers.IO) {
-        repository.localDataSource.insertRecipes(recipesEntity)
+    private fun insertFavoritesRecipes(favoritesEntity: FavoritesEntity) =
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.localDataSource.insertFavoritesRecipes(favoritesEntity)
+        }
+
+    private fun deleteFavoritesRecipe(favoritesEntity: FavoritesEntity) =
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.localDataSource.deleteFavoriteRecipe(favoritesEntity)
+        }
+
+    private fun deleteAllRecipes() = viewModelScope.launch(Dispatchers.IO) {
+        repository.localDataSource.deleteAllFavoriteRecipes()
     }
+
+    private fun insertRecipes(recipesEntity: RecipesEntity) =
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.localDataSource.insertRecipes(recipesEntity)
+        }
 
     /** RETROFIT*/
 
     var recipesResponse: MutableLiveData<NetworkResult<FoodRecipe>> = MutableLiveData()
-    var searchedRecipesResponse:  MutableLiveData<NetworkResult<FoodRecipe>> = MutableLiveData()
+    var searchedRecipesResponse: MutableLiveData<NetworkResult<FoodRecipe>> = MutableLiveData()
 
     fun getRecipes(queries: Map<String, String>) = viewModelScope.launch {
         getRecipesSafeCall(queries)
