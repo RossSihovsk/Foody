@@ -7,7 +7,9 @@
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/drawable/ic_error_placeholder.xml" value="0.1" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/activity_details.xml" value="0.1796875" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/activity_main.xml" value="0.23489583333333333" />
+        <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/favorite_recipes_row_layout.xml" value="0.23125" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/fragment_favorite_recepies.xml" value="0.23489583333333333" />
+        <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/fragment_favorite_recipes.xml" value="0.23229166666666667" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/fragment_food_joke.xml" value="0.23489583333333333" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/fragment_ingredients.xml" value="0.39114583333333336" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/fragment_instructions.xml" value="0.325" />
@@ -18,7 +20,7 @@
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/placeholder_row_layout.xml" value="0.325" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/plcaeholder_row_layout.xml" value="0.5" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/recipes_bottom_sheet.xml" value="0.17845117845117844" />
-        <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/recipes_row_layout.xml" value="0.275049115913556" />
+        <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/recipes_row_layout.xml" value="0.25252525252525254" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/menu-v26/recipes_menu.xml" value="0.23020833333333332" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/menu/bottom_nav_menu.xml" value="0.23489583333333333" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/menu/recipes_menu.xml" value="0.23020833333333332" />
