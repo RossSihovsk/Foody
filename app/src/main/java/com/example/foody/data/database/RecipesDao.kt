@@ -2,8 +2,10 @@ package com.example.foody.data.database
 
 import androidx.room.*
 import com.example.foody.FAVORITE_RECIPES_TABLE
+import com.example.foody.FOOD_JOKE_TABLE
 import com.example.foody.RECIPES_TABLE
 import com.example.foody.data.database.entities.FavoritesEntity
+import com.example.foody.data.database.entities.FoodJokeEntity
 import com.example.foody.data.database.entities.RecipesEntity
 import kotlinx.coroutines.flow.Flow
 
@@ -27,4 +29,10 @@ interface RecipesDao {
 
     @Query("DELETE FROM $FAVORITE_RECIPES_TABLE")
     suspend fun deleteAllFavoriteRecipes()
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertFoodJoke(foodJokeEntity: FoodJokeEntity)
+
+    @Query("SELECT * FROM $FOOD_JOKE_TABLE ORDER BY id ASC")
+    fun readFoodJoke(): Flow<List<FoodJokeEntity>>
 }

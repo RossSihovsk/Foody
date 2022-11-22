@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/drawable/gradient_overlay.xml" value="0.187" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/drawable/ic_error_placeholder.xml" value="0.1" />
+        <entry key="..\:/Ross/Projects/Foody/app/src/main/res/drawable/ic_food_joke_background_light.xml" value="0.169" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/activity_details.xml" value="0.1796875" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/activity_main.xml" value="0.23489583333333333" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/layout/favorite_recipes_row_layout.xml" value="0.23125" />
@@ -25,6 +26,7 @@
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/menu/bottom_nav_menu.xml" value="0.23489583333333333" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/menu/favorites_contextual_menu.xml" value="0.23229166666666667" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/menu/favorites_recipes_menu.xml" value="0.23229166666666667" />
+        <entry key="..\:/Ross/Projects/Foody/app/src/main/res/menu/food_joke_menu.xml" value="0.16041666666666668" />
         <entry key="..\:/Ross/Projects/Foody/app/src/main/res/menu/recipes_menu.xml" value="0.23020833333333332" />
       </map>
     </option>
