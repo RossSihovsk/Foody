@@ -15,6 +15,7 @@ import com.example.foody.adapters.PagerAdapter
 import com.example.foody.data.database.entities.FavoritesEntity
 import com.example.foody.viewmodels.MainViewModel
 import com.google.android.material.snackbar.Snackbar
+import com.google.android.material.tabs.TabLayoutMediator
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_details.*
 
@@ -52,10 +53,13 @@ class DetailsActivity : AppCompatActivity() {
         val resultBundle = Bundle()
         resultBundle.putParcelable("recipeBundle", args.result)
 
-        val adapter = PagerAdapter(resultBundle, fragments, titles, supportFragmentManager)
+        val adapter = PagerAdapter(resultBundle, fragments, this)
 
         viewPager.adapter = adapter
-        tabLayout.setupWithViewPager(viewPager)
+
+        TabLayoutMediator(tabLayout, viewPager) { tab, position ->
+            tab.text = titles[position]
+        }.attach()
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
